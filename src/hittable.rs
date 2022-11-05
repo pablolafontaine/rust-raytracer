@@ -20,7 +20,7 @@ pub struct HitRecord {
     }
 }*/
 
-pub trait Hittable {
+pub trait Hittable: Send + Sync {
     fn hit(&self, _r: &Ray, _t_min: f32, _t_max: f32, _rec: &mut HitRecord) -> bool {
         false
     }

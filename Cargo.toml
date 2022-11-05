@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 fastrand = "1.8.0"
+rayon = "1.5"
+image = "0.24.4"
